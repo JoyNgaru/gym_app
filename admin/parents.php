@@ -76,11 +76,11 @@ header('location:../index.php');
                   <th>Fullname</th>
                   <th>Username</th>
                   <th>Contact Number</th>
-                  <th>child1</th>
-                  <th>child2</th>
-                  <th>child3</th>
-                  <th>child4</th>
-                  <th>child5</th>
+                  <th>child1name</th>
+                  <th>child2name</th>
+                  <th>child3name</th>
+                  <th>child4name</th>
+                  <th>child5name</th>
                 </tr>
               </thead>";
               
@@ -92,11 +92,11 @@ header('location:../index.php');
                 <td><div class='text-center'>".$row['fullname']."</div></td>
                 <td><div class='text-center'>@".$row['username']."</div></td>
                 <td><div class='text-center'>".$row['contact']."</div></td>
-                <td><div class='text-center'>".$row['child1']."</div></td>
-                <td><div class='text-center'>".$row['child2']."</div></td>
-                <td><div class='text-center'>$".$row['child3']."</div></td>
-                <td><div class='text-center'>".$row['child4']."</div></td>
-                <td><div class='text-center'>".$row['child5']." Month/s</div></td>
+                <td><div class='text-center'>".$row['child1name']."</div></td>
+                <td><div class='text-center'>".$row['child2name']."</div></td>
+                <td><div class='text-center'>$".$row['child3name']."</div></td>
+                <td><div class='text-center'>".$row['child4name']."</div></td>
+                <td><div class='text-center'>".$row['child5name']." Month/s</div></td>
              
                 
               </tbody>";

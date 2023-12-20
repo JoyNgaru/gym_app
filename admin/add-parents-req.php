@@ -105,7 +105,24 @@ if(isset($_POST['fullname'])){
 
   include 'dbcon.php';
 //code after connection is successfull
-$qry = "INSERT INTO parents(fullname,username,password,address, contact, child1name, dor1,gender1,services1,amount1,plan1,child2name, dor2,gender2,services2,amount2,plan2,child3name, dor3,gender3,services3,amount3,plan3,child4name, dor4,gender4,services4,amount4,plan4,child5name, dor5,gender5,services5,amount5,plan5,p_year,paid_date) values ('$fullname','$username','$password','$address','$contact','$child1name''$dor1','$gender1','$services1','$totalamount1','$plan1','$child2name''$dor2','$gender2','$services2','$totalamount2','$plan2','$child3name''$dor3','$gender3','$services3','$totalamount3','$plan3','$child4name''$dor4','$gender4','$services4','$totalamount4','$plan4','$child5name''$dor5','$gender5','$services5','$totalamount5','$plan5','$paid_date')";
+$qry = "INSERT INTO parents (
+  fullname, username, password, address, contact, 
+  child1name, dor1, gender1, services1, amount1, plan1,
+  child2name, dor2, gender2, services2, amount2, plan2,
+  child3name, dor3, gender3, services3, amount3, plan3,
+  child4name, dor4, gender4, services4, amount4, plan4,
+  child5name, dor5, gender5, services5, amount5, plan5,
+  p_year, paid_date
+) VALUES (
+  '$fullname', '$username', '$password', '$address', '$contact', 
+  '$child1name', '$dor1', '$gender1', '$services1', '$totalamount1', '$plan1',
+  '$child2name', '$dor2', '$gender2', '$services2', '$totalamount2', '$plan2',
+  '$child3name', '$dor3', '$gender3', '$services3', '$totalamount3', '$plan3',
+  '$child4name', '$dor4', '$gender4', '$services4', '$totalamount4', '$plan4',
+  '$child5name', '$dor5', '$gender5', '$services5', '$totalamount5', '$plan5',
+  '$p_year', '$paid_date'
+)";
+
 $result = mysqli_query($conn,$qry); //query executes
 
 if(!$result){
